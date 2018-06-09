@@ -1,0 +1,23 @@
+#coding:utf-8
+import json
+import codecs
+class PicturePipeline:
+
+    # 初始化时指定要操作的文件
+    def __init__(self):
+        self.file = open('crawled/163.txt', 'a')
+
+    # 存储数据，将 Item 实例作为 json 数据写入到文件中
+    def process_item(self, item, spider):
+        # lines = json.dumps(dict(item), ensure_ascii=False) + '\n'
+        line = " "
+        d = dict(item)
+        for dd in d:
+            line +=","
+            line += str(dd)+","
+            line += str(d(dd))+","
+        self.file.write(line)
+        return item
+    # 处理结束后关闭 文件 IO 流
+    def close_spider(self, spider):
+        self.file.close()
