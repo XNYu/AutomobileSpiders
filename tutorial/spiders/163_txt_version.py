@@ -2,8 +2,6 @@
 import scrapy
 import sys
 import re
-import time
-import json
 from tutorial.Helper import stringHelper as sh
 
 reload(sys)
