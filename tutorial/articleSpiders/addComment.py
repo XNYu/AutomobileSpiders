@@ -5,12 +5,12 @@ rootdir = "F:/txt"
 
 comment = "F:/txt2"
 
-list = os.listdir(rootdir)
-
-for l in list:
-    if "all" in l:
-        print(l.split("-")[0])
-        print(type(l))
+# list = os.listdir(rootdir)
+#
+# for l in list:
+#     if "all" in l:
+#         print(l.split("-")[0])
+#         print(type(l))
 
 # for i in range(0,len(list)):
 #        path = os.path.join(rootdir,list[i])

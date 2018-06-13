@@ -11,8 +11,8 @@
 
 BOT_NAME = 'tutorial'
 FEED_EXPORT_ENCODING = 'utf-8'
-SPIDER_MODULES = ['tutorial.spiders']
-NEWSPIDER_MODULE = 'tutorial.spiders'
+SPIDER_MODULES = ['tutorial.articleSpiders']
+NEWSPIDER_MODULE = 'tutorial.articleSpiders'
 USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
 
 FEED_EXPORTERS = {

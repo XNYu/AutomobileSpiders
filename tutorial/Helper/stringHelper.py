@@ -10,6 +10,7 @@ def format(att):
     att = att.replace("\r", "")
     att = att.replace("\n", "")
     att = att.replace(" ", "")
+    att = att.replace(u'\xa0', u' ')
     return att
 
 def numberTrans(att):
